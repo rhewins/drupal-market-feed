@@ -6,3 +6,11 @@ market_feed.import:
   requirements:
     _permission: 'import market feed prices'
 
+market_feed.page:
+  path: '/market-feed'
+  defaults:
+    _controller: '\Drupal\market_feed\Controller\MarketFeedController::page'
+    _title: 'Market feed'
+  requirements:
+    _permission: 'view market feed prices'
+
