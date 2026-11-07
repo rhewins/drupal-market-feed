@@ -21,7 +21,8 @@ function market_feed_schema(): array {
         'exchange' => [
           'type' => 'varchar',
           'length' => 16,
-          'not null' => FALSE,
+          'not null' => TRUE,
+          'default' => 'other',
         ],
         'price' => [
           'type' => 'numeric',
@@ -53,6 +54,9 @@ function market_feed_schema(): array {
         ],
       ],
       'primary key' => ['symbol'],
+      'indexes' => [
+        'exchange' => ['exchange'],
+      ],
     ],
   ];
 }
