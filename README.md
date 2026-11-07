@@ -43,6 +43,8 @@ Open a terminal and run these commands one at a time:
 
    For this test project, `.env.example` contains the demo Drupal administrator username and password. The values are named `DRUPAL_ADMIN_USER` and `DRUPAL_ADMIN_PASSWORD`.
 
+   `MARKET_FEED_BATCH_SIZE` controls how many valid rows are written per database transaction. The default is `500`; it must be between `1` and `5000`.
+
 4. Start and install the project:
 
    ```bash
@@ -70,6 +72,14 @@ Open a terminal and run these commands one at a time:
 Use the administrator username and password from `.env` to sign in.
 
 The current demo password is for demonstration purposes only. Change it in `.env` before initialization if needed, and never use this demo password in a real development or production environment. In a real development project, `.env.example` should contain only a placeholder, while the actual password should be supplied through the uncommitted local `.env` file or a proper secret-management system.
+
+If you change `MARKET_FEED_BATCH_SIZE` in `.env` after the project is running, restart the project so PHP receives the new value:
+
+```bash
+make restart
+```
+
+Restarting stops and starts the containers without deleting the Drupal database or module files.
 
 ### Useful commands
 

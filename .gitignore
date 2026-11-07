@@ -13,3 +13,4 @@
 /web/sites/*/settings.php
 
 .env
+.ddev/.env.web

@@ -1,2 +1,7 @@
-services: {}
+services:
+  market_feed.importer:
+    class: Drupal\market_feed\Service\MarketFeedImporter
+    arguments:
+      - '@database'
+      - '@cache_tags.invalidator'
 
