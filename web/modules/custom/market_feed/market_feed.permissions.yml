@@ -1,0 +1,8 @@
+import market feed prices:
+  title: 'Import market feed prices'
+  description: 'Import current market prices from a trusted caller.'
+  restrict access: true
+
+view market feed prices:
+  title: 'View market feed prices'
+

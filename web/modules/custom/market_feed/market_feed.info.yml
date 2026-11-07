@@ -1,0 +1,6 @@
+name: Market Feed
+type: module
+description: Imports and displays current market prices.
+package: Custom
+core_version_requirement: ^10 || ^11
+

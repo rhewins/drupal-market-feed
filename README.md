@@ -14,37 +14,64 @@ This is a Drupal custom module that will ingest stock price data, store the late
 
 ## How to run
 
-The local development environment is managed with DDEV.
+The local development environment is managed with DDEV. Before starting, install:
 
-After the project infrastructure has been prepared, run:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [DDEV](https://ddev.com/get-started/)
 
-```bash
-ddev start
-```
+### Start the project for the first time
 
-The remaining Drupal installation and project-specific commands will be added here after the initial DDEV environment is created and verified.
+Open a terminal and run these commands one at a time:
 
-### First-time setup
+1. Download the project:
 
-Copy the local environment template:
+   ```bash
+   git clone https://github.com/rhewins/drupal-market-feed.git
+   ```
 
-```bash
-cp .env.example .env
-```
+2. Enter the project folder:
 
-For this test project, `.env.example` intentionally contains a demo administrator username and password. The Drupal admin username and password are the values of `DRUPAL_ADMIN_USER` and `DRUPAL_ADMIN_PASSWORD` in `.env.example`.
+   ```bash
+   cd drupal-market-feed
+   ```
+
+3. Create the local configuration file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   For this test project, `.env.example` contains the demo Drupal administrator username and password. The values are named `DRUPAL_ADMIN_USER` and `DRUPAL_ADMIN_PASSWORD`.
+
+4. Start and install the project:
+
+   ```bash
+   make setup
+   ```
+
+   The setup command starts Drupal and MariaDB, installs the required dependencies, and installs Drupal automatically.
+
+5. Enable the Market Feed module:
+
+   ```bash
+   ddev drush en market_feed -y
+   ```
+
+6. Confirm that the module is enabled:
+
+   ```bash
+   ddev drush pm:list --type=module --status=enabled | grep market_feed
+   ```
+
+7. Open the URL shown by DDEV, usually:
+
+   [http://drupal-market-feed.ddev.site](http://drupal-market-feed.ddev.site)
+
+Use the administrator username and password from `.env` to sign in.
 
 The current demo password is for demonstration purposes only. Change it in `.env` before initialization if needed, and never use this demo password in a real development or production environment. In a real development project, `.env.example` should contain only a placeholder, while the actual password should be supplied through the uncommitted local `.env` file or a proper secret-management system.
 
-Then run the single setup command:
-
-```bash
-make setup
-```
-
-The setup command starts DDEV, installs Composer dependencies, and installs Drupal if the site is not already installed. The `.env` file is local-only and must not be committed.
-
-Useful commands:
+### Useful commands
 
 ```bash
 make start
