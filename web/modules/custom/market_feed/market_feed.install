@@ -5,3 +5,55 @@
  * Install and schema hooks for the Market Feed module.
  */
 
+/**
+ * Implements hook_schema().
+ */
+function market_feed_schema(): array {
+  return [
+    'market_feed_prices' => [
+      'description' => 'The latest market price for each stock symbol.',
+      'fields' => [
+        'symbol' => [
+          'type' => 'varchar',
+          'length' => 16,
+          'not null' => TRUE,
+        ],
+        'exchange' => [
+          'type' => 'varchar',
+          'length' => 16,
+          'not null' => FALSE,
+        ],
+        'price' => [
+          'type' => 'numeric',
+          'precision' => 20,
+          'scale' => 6,
+          'not null' => TRUE,
+        ],
+        'change_amount' => [
+          'type' => 'numeric',
+          'precision' => 20,
+          'scale' => 6,
+          'not null' => TRUE,
+        ],
+        'volume' => [
+          'type' => 'int',
+          'size' => 'big',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+        'created_at' => [
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+        'updated_at' => [
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ],
+      ],
+      'primary key' => ['symbol'],
+    ],
+  ];
+}
+
