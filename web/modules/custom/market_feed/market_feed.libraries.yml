@@ -1,0 +1,5 @@
+page:
+  css:
+    theme:
+      css/market-feed.css: {}
+

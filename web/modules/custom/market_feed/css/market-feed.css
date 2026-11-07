@@ -1,0 +1,53 @@
+.market-feed-filter {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.market-feed-filter input {
+  max-width: 12rem;
+  padding: 0.45rem 0.6rem;
+}
+
+.market-feed-filter button,
+.market-feed-filter a {
+  padding: 0.45rem 0.75rem;
+}
+
+.market-feed-filter a {
+  align-self: center;
+}
+
+.market-feed-table {
+  border-collapse: collapse;
+  min-width: 42rem;
+  width: 100%;
+}
+
+.market-feed-table th,
+.market-feed-table td {
+  padding: 0.7rem 0.85rem;
+  text-align: right;
+}
+
+.market-feed-table th:first-child,
+.market-feed-table td:first-child,
+.market-feed-table th:nth-child(2),
+.market-feed-table td:nth-child(2) {
+  text-align: left;
+}
+
+.market-feed-table thead th {
+  border-bottom: 2px solid currentColor;
+}
+
+.market-feed-table tbody tr {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.market-feed-table tbody tr:hover {
+  background: color-mix(in srgb, currentColor 7%, transparent);
+}
+
