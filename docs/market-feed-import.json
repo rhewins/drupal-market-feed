@@ -1,0 +1,352 @@
+[
+  {
+    "symbol": "AAPL",
+    "exchange": "NASDAQ",
+    "price": 232.15,
+    "change": -1.2,
+    "volume": 51230000
+  },
+  {
+    "symbol": "MSFT",
+    "price": 415.6,
+    "change": 3.45,
+    "volume": 22150000
+  },
+  {
+    "symbol": "AAPL",
+    "exchange": "NASDAQ",
+    "price": 233,
+    "change": -0.35,
+    "volume": 51500000
+  },
+  {
+    "symbol": "BROKEN",
+    "exchange": "NASDAQ",
+    "price": "not-a-number",
+    "change": 0,
+    "volume": 1000
+  },
+  {
+    "symbol": "STK01",
+    "exchange": "NYSE",
+    "price": 50,
+    "change": -0.12,
+    "volume": 1000000
+  },
+  {
+    "symbol": "STK02",
+    "exchange": "NASDAQ",
+    "price": 53.17,
+    "change": 0.2,
+    "volume": 1125000
+  },
+  {
+    "symbol": "STK03",
+    "exchange": "LSE",
+    "price": 56.34,
+    "change": -0.28,
+    "volume": 1250000
+  },
+  {
+    "symbol": "STK04",
+    "exchange": "HKEX",
+    "price": 59.51,
+    "change": 0.36,
+    "volume": 1375000
+  },
+  {
+    "symbol": "STK05",
+    "exchange": "NYSE",
+    "price": 62.68,
+    "change": -0.44,
+    "volume": 1500000
+  },
+  {
+    "symbol": "STK06",
+    "exchange": "NASDAQ",
+    "price": 65.85,
+    "change": 0.52,
+    "volume": 1625000
+  },
+  {
+    "symbol": "STK07",
+    "exchange": "LSE",
+    "price": 69.02,
+    "change": -0.6,
+    "volume": 1750000
+  },
+  {
+    "symbol": "STK08",
+    "exchange": "HKEX",
+    "price": 72.19,
+    "change": 0.12,
+    "volume": 1875000
+  },
+  {
+    "symbol": "STK09",
+    "exchange": "NYSE",
+    "price": 75.36,
+    "change": -0.2,
+    "volume": 2000000
+  },
+  {
+    "symbol": "STK10",
+    "exchange": "NASDAQ",
+    "price": 78.53,
+    "change": 0.28,
+    "volume": 2125000
+  },
+  {
+    "symbol": "STK11",
+    "exchange": "LSE",
+    "price": 81.7,
+    "change": -0.36,
+    "volume": 2250000
+  },
+  {
+    "symbol": "STK12",
+    "exchange": "HKEX",
+    "price": 84.87,
+    "change": 0.44,
+    "volume": 2375000
+  },
+  {
+    "symbol": "STK13",
+    "exchange": "NYSE",
+    "price": 88.04,
+    "change": -0.52,
+    "volume": 2500000
+  },
+  {
+    "symbol": "STK14",
+    "exchange": "NASDAQ",
+    "price": 91.21,
+    "change": 0.6,
+    "volume": 2625000
+  },
+  {
+    "symbol": "STK15",
+    "exchange": "LSE",
+    "price": 94.38,
+    "change": -0.12,
+    "volume": 2750000
+  },
+  {
+    "symbol": "STK16",
+    "exchange": "HKEX",
+    "price": 97.55,
+    "change": 0.2,
+    "volume": 2875000
+  },
+  {
+    "symbol": "STK17",
+    "exchange": "NYSE",
+    "price": 100.72,
+    "change": -0.28,
+    "volume": 3000000
+  },
+  {
+    "symbol": "STK18",
+    "exchange": "NASDAQ",
+    "price": 103.89,
+    "change": 0.36,
+    "volume": 3125000
+  },
+  {
+    "symbol": "STK19",
+    "exchange": "LSE",
+    "price": 107.06,
+    "change": -0.44,
+    "volume": 3250000
+  },
+  {
+    "symbol": "STK20",
+    "exchange": "HKEX",
+    "price": 110.23,
+    "change": 0.52,
+    "volume": 3375000
+  },
+  {
+    "symbol": "STK21",
+    "exchange": "NYSE",
+    "price": 113.4,
+    "change": -0.6,
+    "volume": 3500000
+  },
+  {
+    "symbol": "STK22",
+    "exchange": "NASDAQ",
+    "price": 116.57,
+    "change": 0.12,
+    "volume": 3625000
+  },
+  {
+    "symbol": "STK23",
+    "exchange": "LSE",
+    "price": 119.74,
+    "change": -0.2,
+    "volume": 3750000
+  },
+  {
+    "symbol": "STK24",
+    "exchange": "HKEX",
+    "price": 122.91,
+    "change": 0.28,
+    "volume": 3875000
+  },
+  {
+    "symbol": "STK25",
+    "exchange": "NYSE",
+    "price": 126.08,
+    "change": -0.36,
+    "volume": 4000000
+  },
+  {
+    "symbol": "STK26",
+    "exchange": "NASDAQ",
+    "price": 129.25,
+    "change": 0.44,
+    "volume": 4125000
+  },
+  {
+    "symbol": "STK27",
+    "exchange": "LSE",
+    "price": 132.42,
+    "change": -0.52,
+    "volume": 4250000
+  },
+  {
+    "symbol": "STK28",
+    "exchange": "HKEX",
+    "price": 135.59,
+    "change": 0.6,
+    "volume": 4375000
+  },
+  {
+    "symbol": "STK29",
+    "exchange": "NYSE",
+    "price": 138.76,
+    "change": -0.12,
+    "volume": 4500000
+  },
+  {
+    "symbol": "STK30",
+    "exchange": "NASDAQ",
+    "price": 141.93,
+    "change": 0.2,
+    "volume": 4625000
+  },
+  {
+    "symbol": "STK31",
+    "exchange": "LSE",
+    "price": 145.1,
+    "change": -0.28,
+    "volume": 4750000
+  },
+  {
+    "symbol": "STK32",
+    "exchange": "HKEX",
+    "price": 148.27,
+    "change": 0.36,
+    "volume": 4875000
+  },
+  {
+    "symbol": "STK33",
+    "exchange": "NYSE",
+    "price": 151.44,
+    "change": -0.44,
+    "volume": 5000000
+  },
+  {
+    "symbol": "STK34",
+    "exchange": "NASDAQ",
+    "price": 154.61,
+    "change": 0.52,
+    "volume": 5125000
+  },
+  {
+    "symbol": "STK35",
+    "exchange": "LSE",
+    "price": 157.78,
+    "change": -0.6,
+    "volume": 5250000
+  },
+  {
+    "symbol": "STK36",
+    "exchange": "HKEX",
+    "price": 160.95,
+    "change": 0.12,
+    "volume": 5375000
+  },
+  {
+    "symbol": "STK37",
+    "exchange": "NYSE",
+    "price": 164.12,
+    "change": -0.2,
+    "volume": 5500000
+  },
+  {
+    "symbol": "STK38",
+    "exchange": "NASDAQ",
+    "price": 167.29,
+    "change": 0.28,
+    "volume": 5625000
+  },
+  {
+    "symbol": "STK39",
+    "exchange": "LSE",
+    "price": 170.46,
+    "change": -0.36,
+    "volume": 5750000
+  },
+  {
+    "symbol": "STK40",
+    "exchange": "HKEX",
+    "price": 173.63,
+    "change": 0.44,
+    "volume": 5875000
+  },
+  {
+    "symbol": "STK41",
+    "exchange": "NYSE",
+    "price": 176.8,
+    "change": -0.52,
+    "volume": 6000000
+  },
+  {
+    "symbol": "STK42",
+    "exchange": "NASDAQ",
+    "price": 179.97,
+    "change": 0.6,
+    "volume": 6125000
+  },
+  {
+    "symbol": "STK43",
+    "exchange": "LSE",
+    "price": 183.14,
+    "change": -0.12,
+    "volume": 6250000
+  },
+  {
+    "symbol": "STK44",
+    "exchange": "HKEX",
+    "price": 186.31,
+    "change": 0.2,
+    "volume": 6375000
+  },
+  {
+    "symbol": "STK45",
+    "exchange": "NYSE",
+    "price": 189.48,
+    "change": -0.28,
+    "volume": 6500000
+  },
+  {
+    "symbol": "STK46",
+    "exchange": "NASDAQ",
+    "price": 192.65,
+    "change": 0.36,
+    "volume": 6625000
+  }
+]
+

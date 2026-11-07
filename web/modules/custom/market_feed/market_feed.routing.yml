@@ -1,2 +1,8 @@
-{}
+market_feed.import:
+  path: '/api/market-feed/import'
+  defaults:
+    _controller: '\Drupal\market_feed\Controller\MarketFeedImportController::import'
+  methods: [POST]
+  requirements:
+    _permission: 'import market feed prices'
 

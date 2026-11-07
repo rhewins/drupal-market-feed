@@ -73,6 +73,22 @@ Use the administrator username and password from `.env` to sign in.
 
 The current demo password is for demonstration purposes only. Change it in `.env` before initialization if needed, and never use this demo password in a real development or production environment. In a real development project, `.env.example` should contain only a placeholder, while the actual password should be supplied through the uncommitted local `.env` file or a proper secret-management system.
 
+### Run the demo import
+
+The sample payload is stored in `docs/market-feed-import.json`. Drush runs from Drupal's `web` directory, so use the relative path `../docs/market-feed-import.json`:
+
+```bash
+ddev drush php:eval '$payload = json_decode(file_get_contents("../docs/market-feed-import.json"), TRUE, 512, JSON_THROW_ON_ERROR); echo json_encode(\Drupal::service("market_feed.importer")->import($payload), JSON_PRETTY_PRINT), PHP_EOL;'
+```
+
+The demo contains 50 rows: 48 distinct valid symbols, one duplicate symbol where the last occurrence wins, one missing exchange that falls back to `other`, and one invalid row that is skipped.
+
+To inspect the imported values:
+
+```bash
+ddev drush sql:query "SELECT symbol, exchange, price, change_amount, volume FROM market_feed_prices ORDER BY symbol"
+```
+
 If you change `MARKET_FEED_BATCH_SIZE` in `.env` after the project is running, restart the project so PHP receives the new value:
 
 ```bash
