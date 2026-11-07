@@ -1,0 +1,15 @@
+/vendor/
+
+/web/core/
+/web/modules/contrib/
+/web/profiles/contrib/
+/web/themes/contrib/
+/web/libraries/
+
+/web/sites/*/files/
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+/web/sites/*/settings.ddev.php
+/web/sites/*/settings.php
+
+.env
